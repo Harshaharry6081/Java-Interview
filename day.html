@@ -499,7 +499,20 @@ async function loadMarkdown(file) {
           synth.cancel(); 
           // UI reset is handled by utter.onend
         } else {
-          speakItem(li.querySelector('.li-text'), pBtn);
+          // Gather text from this question AND the subsequent answer blocks
+          let textToRead = li.querySelector('.li-text').innerHTML;
+          let parentList = li.closest('ul, ol');
+          if (parentList) {
+            let sibling = parentList.nextElementSibling;
+            // Stop if we hit the next question (UL/OL) or a new section header
+            while (sibling && !['UL', 'OL', 'H1', 'H2', 'H3', 'H4'].includes(sibling.tagName)) {
+               textToRead += " " + sibling.outerHTML;
+               sibling = sibling.nextElementSibling;
+            }
+          }
+          const tempDiv = document.createElement('div');
+          tempDiv.innerHTML = textToRead;
+          speakItem(tempDiv, pBtn);
         }
       });
     });
