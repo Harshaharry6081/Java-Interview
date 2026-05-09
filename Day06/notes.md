@@ -1,8 +1,6 @@
 # Spring Boot Advanced & Security
 
 ## Step-8-Spring-Boot-Level-III-Scenario-Based
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 1) If you had to scale a Spring Boot application to handle high traffic, what strategies would you
 use?
 To scale a Spring Boot application for high traffic, we can:
@@ -39,8 +37,6 @@ security by restricting other cross -origin interactions.
 steps you would take to identify and address the performance?
 First, I would identify the specific performance issues using monitoring tools like Spring Boot
 Actuator or Splunk.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 I would also analyze application logs and metrics to spot any patterns or errors, especially under high
 load.
 Then, I would start a performance tests to replicate the issue and use a profiler for code -level
@@ -75,8 +71,6 @@ Let’s say my Spring Boot application is taking too long to respond to user req
 • Optimize database queries to reduce the load on the database.
 • Use asynchronous methods for operations like sending emails.
 • Load Balancer if traffic is high
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 • Optimize the time complexity of the code
 • Use webFlux to handle a large number of concurrent connections.
 8) Describe a scenario where a Spring Boot application needs to dynamically switch between
@@ -114,8 +108,6 @@ important and what's not.
 After sorting the data, it stores it in a database designed for quick access and analysis. This way, the
 system can handle tons of information coming in all at once, making sure everything runs smoothly
 and quickly.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 12) Discuss the specific security challenges associated with using WebSockets in a Spring Boot
 application.
 WebSockets in Spring Boot apps face security issues because they keep a constant connection open
@@ -154,8 +146,6 @@ others.
 How would you handle API rate limits and failures?
 To handle API rate limits and failures in a Spring Boot application, I would
 • Use a circuit breaker to manage failures
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 • Implement rate limiting to avoid exceeding API limits
 • Add a retry mechanism with exponential backoff for temporary issues
 • Use caching to reduce the number of requests.
@@ -181,8 +171,6 @@ To tell the app when something important happens, I'd publish these events from 
 app. This way, parts of the app can communicate and react to events without being directly
 connected, keeping the code clean and organized.
 ## Step-9-Spring-Security-Level-I
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 1) How does Spring Security integrate with OAuth2 for authorization
 Spring Security integrates with OAuth2 for authorization by acting as a client that can request access
 tokens from an OAuth2 provider.
@@ -220,8 +208,6 @@ device, minimizing the risk of sensitive information being exposed.
 what circumstances might you disable CSRF protection?
 Spring Security protects against CSRF attacks by generating unique tokens for each session and
 requiring that each request from the client includes this token.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 This ensures the request is from the authenticated user, not a malicious site. However, CSRF
 protection might be disabled for APIs meant to be accessed by non -browser clients, like mobile apps
 or other back -end services, where the risk of CSRF is low and t okens can't be easily managed.
@@ -262,8 +248,6 @@ This is done by defining patterns in the security settings, where I link certain
 roles, like making all paths starting with "/admin" accessible only to users with the ADMIN role, and
 paths starting with "/user" accessible to those w ith the USER role. This way, each type of user gets
 access to the right parts of the application.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 10) What do you mean by digest authentication?
 Digest authentication is a way to check who is trying to access something online without sending
 their actual password over the internet. Instead, it sends a hashed (scrambled) version of the
@@ -304,8 +288,6 @@ To debug access issues in a Spring Security -enabled application, I would start 
 configuration to ensure the correct roles and permissions are set for the resource. Next, I would
 examine the logs to see if Spring Security is throwing  any specific errors or denying access for a
 particular reason.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 I might also enable debug logging for Spring Security to get more detailed information about the
 security decisions being made. Additionally, verifying the user's assigned roles and the methodlevel
 security annotations, if any, would help identify if the a ccess rules are correctly applied.
@@ -343,8 +325,6 @@ This allows for detailed control over who can access what in the application, ma
 checks more dynamic and tailored to the specific scenario, ensuring that users only access resources
 and actions they are authorized for.
 19) Explain what is AuthenticationManager  and ProviderManager in Spring security.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 The AuthenticationManager in Spring Security is like a checkpoint that checks if user login details are
 correct. The ProviderManager is a specific type of this checkpoint that uses a list of different ways
 (providers) to check the login details.

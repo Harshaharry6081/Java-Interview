@@ -1,8 +1,7 @@
 # Microservices
 
 ## Step-14-Microservices-Level-I
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Microservices Most Asked Interview Questions
+  Microservices Most Asked Interview Questions
 What are microservices?
 Microservices are a way to build software where each part of the application does a specific
 job and works independently. This setup makes it easier to manage, update, and scale the
@@ -32,8 +31,7 @@ regularly updated.
 What is the role of an API Gateway in microservices?
 An API Gateway in microservices acts like a main entrance, directing incoming requests to
 the correct service within the application. It helps manage traffic, offers security checks like
-GenZ Career on YouTube
-Subscribe for Interview Preparation  login verification, and can improve performance by handling tasks that are common across
+  login verification, and can improve performance by handling tasks that are common across
 services, such as encrypting data and limiting how many requests come in. This setup
 simplifies how clients interact with the app, making it easier to use and more sec ure.
 How does an API Gateway manage traffic?
@@ -63,8 +61,7 @@ information. They use specific interfaces called APIs, which let them exchange d
 requests without needing to know how other services are built. This setup allows them to
 work together as parts of a single application, each handling its tasks and talking to others as
 needed.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  What is synchronous vs. asynchronous communication?
+  What is synchronous vs. asynchronous communication?
 Synchronous communication is like having a conversation on the phone —we talk, then the
 other person immediately responds while both of we are connected. Asynchronous
 communication is like sending an email —we send a message and the other person can reply
@@ -97,8 +94,7 @@ Service discovery in microservices helps services find and talk to each other. W
 starts up, it tells a central Service Registry where it is and how to connect to it. When one
 service needs to communicate with another, it checks this registry t o find the most current
 information on where and how to connect to the other service. This system makes sure that
-GenZ Career on YouTube
-Subscribe for Interview Preparation  services can always find each other, even as they change or move around within the
+  services can always find each other, even as they change or move around within the
 network.
 What would happen if a service registry fails?
 If a service registry fails, it can cause big problems in a microservices system because
@@ -128,8 +124,7 @@ network. It means that when data is updated in one place, it might take some tim
 parts of the system see the change. This approach allows the system to ru n faster and
 handle more users or actions at once, even though the data might not be exactly the same
 everywhere right away. Eventually, all parts of the system will have the updated data.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  How would you implement a transaction that spans multiple services?
+  How would you implement a transaction that spans multiple services?
 To handle a transaction over multiple services, use the Saga pattern. Here's how it works:
 Split the main transaction into smaller parts, with each part handled by a different service.
 Each service completes its part and tells the others whether it succeed ed or failed. If one
@@ -162,8 +157,6 @@ gradually rolls it out to everyone. This method lets we test how the new version
 the real world step -by-step. Blue -green deployment switches all users from the old version
 to the new one at once after testing. This means all users see the new version at the same
 time once it's switched over.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 What tools would you recommend for automating microservices deployment?
 For automating microservices deployment, consider these tools: Kubernetes helps manage
 and scale services automatically. Jenkins automates the steps needed to build and deploy
@@ -194,8 +187,6 @@ Grafana for making charts and graphs, and the ELK Stack (Elasticsearch, Logstash
 managing logs and creating visuals. Jaeger and Zipkin are good for tracing how requests
 travel through our services. These tools help we understand how our services are
 performing and quickly find and fix any issues.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 How do you ensure security in microservices?
 To ensure security in microservices, we should use strong authentication and authorization
 to control who can access services, encrypt data being sent and stored, and communicate
@@ -227,8 +218,7 @@ Discuss the patterns used to handle failures in microservices.
 In microservices, to manage failures, several patterns are used. The Circuit Breaker pattern
 stops repeated attempts to a service that's failing, which helps avoid further errors. Fallback
 methods give an alternative plan when a service fails. The Retry pa ttern tries the request
-GenZ Career on YouTube
-Subscribe for Interview Preparation  again, using delays to reduce pressure on the system. Bulkhead and Timeout patterns keep
+  again, using delays to reduce pressure on the system. Bulkhead and Timeout patterns keep
 failures in one service from affecting others and prevent long waits for responses.
 What is the Circuit Breaker pattern?
 The Circuit Breaker pattern is like a safety switch for microservices. If a service starts to fail

@@ -1,8 +1,6 @@
 # Stream API
 
 ## Common-Step-Stream-API-Coding-Level-I
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Java Most Asked Stream API Coding Questions
 1. Filter Even Numbers
 Problem:  Given a list of integers, return a list containing only even numbers.
@@ -32,8 +30,6 @@ method to get the total.
 Problem:  Convert all strings in a list to uppercase.
 Solution:
 List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 List<String> upperNames = names.stream()
 .map(String::toUpperCase)
 .collect(Collectors.toList());
@@ -66,8 +62,6 @@ Problem:  Reduce a list of integers to their sum.
 Solution:
 int total = numbers.stream()
 .reduce(0, Integer::sum);
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Explanation:  The reduce  method takes an identity (0 in this case) and an accumulator
 function ( Integer::sum ) to calculate the total.
 9. Find Any
@@ -99,8 +93,6 @@ Solution:
 boolean noneNegative = numbers.stream()
 .noneMatch(n -> n < 0);
 Explanation:  noneMatch  checks that no elements match the negative condition.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 13. Find First
 Problem:  Find the first element in a list of integers.
 Solution:
@@ -132,8 +124,6 @@ List<Integer> peekedAtNumbers = numbers.stream()
 .collect(Collectors.toList());
 Explanation:  peek  is used for debugging or performing actions without changing the stream.
 It prints each element before passing it along the stream.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 17. Limit Stream
 Problem:  Limit the output to the first 3 elements of the list.
 Solution:
@@ -163,8 +153,6 @@ IntSummaryStatistics stats = numbers.stream()
 Explanation:  summaryStatistics  provides a summary (max, min, average, sum, count) for
 a stream of integers.
 ## Common-Step-Stream-API-Coding-Level-II
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 1) Given a list of integers, find out all the even numbers that exist in the list using Stream
 functions?
 import java.util.*;
@@ -215,9 +203,6 @@ System.out.println(list);
 ```java
 }
 ```
-
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 
 ```java
 }
@@ -273,8 +258,6 @@ List<Integer> myList = Arrays.asList(1, 1, 85, 6, 2, 3, 65, 6, 45, 45, 5662, 258
 666, 656);
 Set<Integer> set = new HashSet<>(myList);
 // Convert the set back to a l ist if needed
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 List<Integer> uniqueData = set.stream().collect(Collectors.toList());
 // Print the unique elements
 uniqueData.forEach(System.out::println);
@@ -331,8 +314,6 @@ Arrays.stream(arr).boxed().count();
 }
 ```
 
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Output:
 9
 6) Given a list of integers, find the maximum value element present in it using Stream functions?
@@ -381,8 +362,6 @@ Collec tors.counting())) //Store the chars in map with count
 .stream()
 .filter(entry -> entry.getValue() == 1L)
 .map(entry -> entry.getKey())
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 .findFirst()
 .get();
 System.out.println(result);
@@ -428,8 +407,6 @@ return input.chars()
 .filter(c -> !seenCharacters.add(c))
 .findFirst()
 .orElse(null);
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 
 ```java
 }
@@ -482,8 +459,6 @@ public static void main(String args[]) {
 List<Integer> myList = Arrays.asList(10,15,8,49,25,98,98,32,15);
 ```
 
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 myList.stream()
 .sorted(Collections.reverseOrder())
 .forEach(System.out::println);
@@ -543,8 +518,6 @@ public static void main(String[] args) {
 System.out.println("Current Local Date: " + java.time.LocalDate.now());
 ```
 
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 //Used LocalDate API to get the date
 System.out.println("Current Local Time: " + java.time.LocalTime.now());
 //Used LocalTime API to get the time
@@ -596,8 +569,6 @@ integerList.stream()
 Output:
 64
 125
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 216
 343
 15) Write a Java 8 program to sort an array and then convert the sorted array into Stream?
@@ -653,8 +624,6 @@ noteLst.add(new Notes(4, "note4", 44));
 noteLst.add(new Notes(5, "note5", 55));
 ```
 
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 noteLst.add(new Notes(6, "note4", 66));
 Map<String, Long> notesRecords = noteLst.stream()
 .sorted(Comparator
@@ -713,8 +682,6 @@ Map<String,Long> namesCount = names
 (Function.identity(), Collectors.counting()));
 System.out.println(namesCount);
 /*or you can also try using  */
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Map<String, Long> namesCount = names.stream()
 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
 .entrySet()
@@ -767,8 +734,6 @@ LinkedHashMap::new, Collectors.counting()));
 Map<String, Long> mapObject = Arrays.stream(s.split(""))
 .map(S tring::toLowerCase)
 .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 
 ```java
 }

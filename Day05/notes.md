@@ -1,8 +1,6 @@
 # Spring Boot Basics
 
 ## Step-6-Spring-Boot-Level-I
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Basic Spring Boot Interview Questions and Answers
 1) What is Spring Boot?
 Spring Boot is a powerful framework that streamlines the development, testing, and deployment of
@@ -31,8 +29,6 @@ checks and metrics.
 5) Why do we prefer Spring Boot over Spring?
 Spring Boot is preferred over traditional Spring because it requires less manual configuration and
 setup, offers production -ready features out of the box like embedded servers and metrics, and
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 simplifies dependency management. This makes it easier and faster to create new applications and
 microservices, reducing the learning curve and development time.
 6) Explain the internal working of Spring Boot.
@@ -61,8 +57,6 @@ Spring Initializr is a website that helps us to  start a new Spring Boot project
 project settings, like dependencies and configurations, using an easy interface. Then, it creates a
 ready -to-use project that we can download or import into our development tool, making it faster and
 easier to get started.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 11) What is a Spring Bean?
 A Spring Bean is an object managed by the Spring framework. The framework creates, configures,
 and connects these beans for us, making it easier to manage dependencies and the lifecycle of
@@ -95,8 +89,6 @@ depends  on. Instead of manually keeping track of them, Spring Boot helps us man
 automatically. It uses tools like Maven or Gradle to organize these dependencies, making sure they
 work well together. This saves developers time and effort  and allowing us to focus on writing their
 own code without getting bogged down in managing dependencies.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 17) Is it possible to change the port of the embedded Tomcat server in Spring Boot?
 Yes, we can change the default port of the embedded Tomcat server in Spring Boot. This can be done
 by setting the server.port property in the application.properties or application.yml file to the desired
@@ -124,8 +116,6 @@ application.properties or application.yml file.
 Absolutely, Spring Boot is not limited to web applications. We can create standalone, non -web
 applications by disabling the web context. This is done by setting the application type to 'none',
 which skips the setup of web -specific contexts and configuratio ns.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 23) Describe the flow of HTTPS requests through a Spring Boot application.
 In a Spring Boot application, HTTPS requests first pass through the embedded server's security layer,
 which manages SSL/TLS encryption. Then, the requests are routed to appropriate controllers based
@@ -157,8 +147,6 @@ added. It is included within @Sprin gBootApplication.
 application?
 In a Spring Boot application, we can find out which profiles are active by using a tool called
 Environment. First, we include Environment in our code using @Autowired, which automatically fills
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 it with the right information. Then, we use the getActiveProfiles() method of Environment to get a list
 of all the active profiles. This method gives us the names of these profiles as a simple array of strings.
 @Autowired
@@ -183,8 +171,6 @@ To list all the beans loaded by the Spring ApplicationContext, we can inject the
 into any Spring -managed bean and call the getBeanDefinitionNames() method. This will return a
 String array containing the names of all beans managed by the context.
 33) Can we check the environment properties in our Spring Boot application? Explain how.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Yes, we can access environment properties in Spring Boot via the Environment interface. Inject the
 Environment into a bean using the @Autowired annotation and use the getProperty() method to
 retrieve properties.
@@ -212,8 +198,6 @@ Mockito lets us replace some parts with dummy versions to focus on what we are  
 Unit testing is a way to check if small parts of a program work as they should. It helps find mistakes
 early, making it easier to fix them and keep the program running smoothly. This makes the software
 more reliable and easier to update later.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 38) How do JUnit and Mockito facilitate unit testing in Java projects?
 JUnit and Mockito are tools that help test small parts of Java programs. JUnit lets us check if each
 part works right, while Mockito lets us create fake versions of parts we are  not testing. This way, we
@@ -247,8 +231,6 @@ actual features of our application.
 Yes, in Spring Boot, we can customize specific auto -configurations. Although Spring Boot
 automatically sets up components based on our environment, we can override these settings in our
 application properties or YAML file, or by adding our own configuration beans. We can also use the
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 @Conditional annotation to include or exclude certain configurations under specific conditions. This
 flexibility allows us to tailor the auto -configuration to better fit our application’s specific needs.
 45) How can you disable specific auto -configuration classes in Spring Boot?
@@ -286,8 +268,6 @@ We can version REST APIs in several ways: include the version number in the URL 
 /api/v1/resource), add a version parameter in the URL (e.g., /api/resource?version=1), use custom
 headers to specify the version (e.g., Accept: application/vnd.example.v1+ json), or use media types
 for versioning (e.g., application/vnd.example.v1+json).
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 50) What are the REST API Best practices ?
 Best practices for REST APIs are using the right HTTP methods (GET, POST, PUT, DELETE), keeping
 each request independent (stateless), naming resources clearly, handling errors consistently with
@@ -319,8 +299,6 @@ in the classpath?
 Spring Boot decides which embedded server to use based on the order of dependencies in the
 classpath. If multiple server dependencies are present, it selects the first one found. For example, if
 both Tomcat and Jetty are present, it will use the one that a ppears first in the dependency list.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 57) How can we disable the default server and enable the different one?
 To disable the default server and enable a different one in Spring Boot, exclude the default server
 dependency in the pom.xml or build.gradle file and add the dependency for the desired server. For
@@ -345,8 +323,6 @@ manual bean registration and making i t easier to manage and scale the applicati
 architecture.
 5. @Bean : The @Bean annotation in Spring marks a method in a configuration class to
 define a bean. This bean is then managed by the Spring container, which handles its
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 lifecycle and dependencies. The @Bean annotation is used to explicitly create and
 configure beans that Spring should manage.
 6. @Component : The @Component annotation in Spring marks a class as a Spring -
@@ -374,8 +350,6 @@ application framework.
 RESTful web service controller. It combines @Controller and @ResponseBody,
 meaning the methods in the class automatically return JSON or XML responses,
 making it easy to create REST APIs.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 11. @RequestMapping : The @RequestMapping annotation in Spring maps HTTP
 requests to handler methods in controller classes. It specifies the URL path and the
 HTTP method (GET, POST, etc.) that a method should handle, enabling routing and
@@ -404,8 +378,6 @@ services.
 configuration for Spring MVC. It sets up essential components like view resolvers,
 message converters, and handler mappings, providing a base configuration for
 building web applications.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 18. @EnableAsync : The @EnableAsync annotation in Spring enables asynchronous
 method execution. It allows methods to run in the background on a separate thread,
 improving performance by freeing up the main thread for other tasks.
@@ -418,8 +390,6 @@ to enable scheduling capabilities for methods within a Spring application. It al
 methods annotated with @Scheduled to be executed based on specified time
 intervals or cron expressions.
 ## Step-7-Spring-Boot-Level-II
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 1. How would you handle inter -service communication in a microservices architecture using
 Spring Boot?
 For simple, direct communication, I would use RestTemplate , which allows services to send
@@ -459,8 +429,6 @@ Then, I would start a performance tests to replicate the issue and use a profile
 analysis.
 After getting findings, I might optimize the database, implement caching, or use scaling
 options. It's also crucial to continuously monitor the application to prevent future issues.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 5. What are the best practices for versioning REST APIs in a Spring Boot application
 For versioning REST APIs in Spring Boot, best practices include:
 • URL Versioning: Include the version number in the URL, like /api/v1/products.
@@ -498,8 +466,6 @@ It depends on @Conditional annotations (like @ConditionalOnClass) in its auto -c
 classes to determine what to configure. This smart setup tailors the configuration to our
 needs, simplifying and speeding up the development process.
 9. What are Spring Boot Actuator endpoints?
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Spring Boot Actuator is like a toolbox for monitoring and managing our Spring Boot
 application. It gives us endpoints (think of them as special URLs) where we can check health,
 view
@@ -534,8 +500,6 @@ Another way is to use @Primary on one of the beans, marking it as the default ch
 injecting that type.
 13. What are some best practices for managing transactions in Spring Boot applications?"
 1. Use @Transactional
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 What It Is: @Transactional is an annotation in Spring Boot that we put on methods or
 classes. It tells Spring Boot, "Hey, please handle this as a single transaction."
 How to Use It: Put @Transactional on service methods where we perform database
@@ -574,8 +538,6 @@ limitations when using YAML for configuration?
 YAML offers several advantages over properties files in Spring Boot. It supports hierarchical
 configurations, which are more readable and easier to manage, especially for complex
 structures.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 YAML also allows comments, aiding documentation. However, YAML has limitations too. It's
 more error -prone due to its sensitivity to spaces and indentation. Additionally, YAML is less
 familiar to some developers compared to the straightforward key -value for mat of properties
@@ -615,8 +577,6 @@ processing payments, and the other lists all the products.
 Building and managing such an app can be complex because we need all these sections to
 work together seamlessly. Customers should be able to log in, add items to their cart, pay for
 them, and browse products without any problems.  That’s where Spring Cloud  comes into
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 the picture. It helps microservices in connecting the section, balancing the crowd, keeping
 the secret safe, etc., etc.
 21. How does Spring Boot make the decision on which server to use?
@@ -654,8 +614,6 @@ Spring Boot makes Dependency Injection (DI) easier compared to traditional Sprin
 configuring beans and reducing the need for explicit configuration. In traditional Spring, we
 had to define beans and their dependencies in XML files or with annotati ons, which can be
 complex for large applications.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 But in spring boot, we use Auto -Configuration and Component Scanning to automatically
 discover and register beans based on the application's context and classpath. This means
 now we don't have to manually wire up beans;
@@ -694,8 +652,6 @@ the task to finish.
 Remember, for the @Async annotation to be effective, the method calls must be made from
 outside the class. If I call an asynchronous method from within the same class, it won't
 execute asynchronously due to the way Spring proxying works
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 29. Describe how you would secure sensitive data in a Spring Boot application that is accessed
 by multiple users with different roles
 To keep sensitive information safe in a Spring Boot app used by many people with different
@@ -733,8 +689,6 @@ craft the welcome email content and use the send method to dispatch emails.
 And finally, after a user successfully registers, I would call my mail service from within the
 registration logic to send the welcome email.
 33. What is Spring Boot CLI and how to execute the Spring Boot project using boot CLI?
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Spring Boot CLI (Command Line Interface) is a tool for running Spring Boot applications
 easily. It helps to avoid boilerplate code and configuration.
 To execute the spring boot project using boot CLI:
@@ -770,8 +724,6 @@ So, eviction manages cache size, while expiration ensures data freshness.
 37. If you had to scale a Spring Boot application to handle high traffic, what strategies would
 you use?
 To scale a Spring Boot application for high traffic, we can:
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Add more app instances (horizontal scaling) and use a load balancer to spread out the traffic.
 Break your app into microservices so each part can be scaled independently.
 Use cloud services that can automatically adjust resources based on your app's needs.
@@ -805,8 +757,6 @@ To handle API rate limits and failures in a Spring Boot application, I would
 This approach helps keep the application reliable and efficient.
 41. How you would manage externalized configuration and secure sensitive configuration
 properties in a microservices architecture?
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 To handle these settings across microservices in a big project, I would use a tool called Spring
 Cloud Config.
 It's like having a central folder where all settings are kept.
@@ -842,8 +792,6 @@ for people from different parts of the world.
 Spring Boot DevTools is a tool that makes developing applications faster and easier. It
 automatically restarts our application when we change code, so we can see updates
 immediately without restarting manually.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 It also refreshes our web browser automatically if we change things like HTML files. DevTools
 also provides shortcuts for common tasks and helps with fixing problems by allowing remote
 debugging.
@@ -882,8 +830,6 @@ To make my Spring Boot app secure, I'd set up a few things with Spring Security.
 make sure users are who they say they are by setting up a login system. This could be a
 simple username and password form or using accounts from other services. Nex t, I'd control
 what parts of the app each user can access, based on their role.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 I'd also switch on HTTPS to keep data safe while it's being sent over the internet. Spring
 Security helps stop common web attacks like CSRF by default, so I'd make sure that's turned
 on. Plus, I'd manage user sessions carefully to avoid anyone hijacking th em, and I'd store
@@ -922,8 +868,6 @@ For security, we integrate Spring Security to add authentication, authorization,
 protection against common threats.
 To enable monitoring, we use Spring Actuator, which provides built -in endpoints for
 monitoring and managing the gateway.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 This setup allows us to control how requests are handled, secure the gateway, and keep an
 eye on its performance and health, all within the Spring ecosystem.
 54. How would you manage and monitor asynchronous tasks in a Spring Boot application,
@@ -963,8 +907,6 @@ In Spring Boot, to make an auto -configuration step back when a bean already exi
 the
 @ConditionalOnMissingBean annotation. This tells Spring Boot to only create a bean if it
 doesn't already exist in the context.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 For example, if we are auto -configuring a data source but want to back off when a data
 source bean is manually defined, we annotate the auto -configuration method with
 @ConditionalOnMissingBean(DataSource.class). This ensures our custom configuration takes
@@ -1003,8 +945,6 @@ using a different server, like Jetty or Undertow, we simply need to exclude Tomc
 dependency and include the one we want to use in our pom.xml or build.gradle fil e.
 Spring Boot automatically configures the new server as the embedded server for our
 application. This flexibility allows us to choose the server that best fits our needs without
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 significant changes to our application, making Spring Boot adaptable to various deployment
 environments and requirements.
 62. How to resolve whitelabel error page in the spring boot application?
@@ -1043,8 +983,6 @@ easily talk to each other or respond to changes without being directly conne cte
 great for tasks like sending notifications or updating data based on events, helping keep my
 code clean and manageable.
 66. What are the basic Annotations that Spring Boot offers?
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Spring Boot offers several basic annotations for the development. @SpringBootApplication is
 a key annotation that combines @Configuration, @EnableAutoConfiguration, and
 @ComponentScan, setting up the foundation for a Spring Boot application.
@@ -1083,8 +1021,6 @@ To implement rate limiting in a Spring Boot application, a simple approach is to
 like Bucket4j or Spring Cloud Gateway with built -in rate -limiting capabilities. By integrating
 one of these libraries, I can define policies directly on my API e ndpoints to limit the number
 of requests a user can make in a given time frame.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 This involves configuring a few annotations or settings in my application properties to specify
 the rate limits. This setup helps prevent abuse and ensures that all users have fair access to
 my application's resources, maintaining a smooth and reliable ser vice.

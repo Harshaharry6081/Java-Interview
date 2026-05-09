@@ -1,8 +1,6 @@
 # Core Java Basics
 
 ## Step-1-Core-Java-Level-I-1
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Java Basic Interview Questions
 
 - [ ] **Q1. What is Java?**
@@ -44,8 +42,6 @@ and abstraction.
 
 Inheritance is a fundamental OOP concept where one class can inherit fields and methods from
 another class. In Java, inheritance is achieved using the extends keyword.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 
 - [ ] **Q8. What is polymorphism in Java?**
 
@@ -84,8 +80,6 @@ which do not have an implementation and must be implemented in subclasses.
 
 - [ ] **Q12. What are constructors in Java?**
 
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Constructors in Java are special methods used to initialize objects. The constructor is called when an
 object of a class is created and has the same name as the class.
 
@@ -127,8 +121,6 @@ without being caught or declared.
 The static keyword in Java is used to indicate that a particular field, method, or block of code belongs
 to the class, rather than instances of the class. Static members are shared among all instances of a
 class.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 
 - [ ] **Q20. What is a thread in Java?**
 
@@ -173,8 +165,6 @@ argument in the constructor call, and return the current class  instance.
 
 - [ ] **Q27. What is Enum in Java?**
 
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Enum in Java is a data type that consists of a fixed set of constants. Enums are used to create our
 own data types (Enumerated Data Types). It is used when we know all possible values at compile
 time, such as choices on a menu, rounding modes, command line  flags, etc.
@@ -201,8 +191,6 @@ The volatile keyword in Java is used to indicate that a variable's value will be
 threads. Declaring a variable volatile ensures that its value is read from the main memory and not
 from the thread's cache memory.
 ## Step-2-Core-Java-Level-II-1
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Index
 Java Architecture and Memory Management ………………………………………………………. 1
 Java Fundamentals ………………………………………………………………………………………………  2
@@ -238,8 +226,7 @@ VM memory is divided into Heap Space, Stack Memory, Method Area (Metaspace in
 Java 8 and above), and Native Method Stacks.
 Heap space in Java is where the program stores objects and data that it creates and
 shares.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Stack memory is used for keeping track of what happens inside each function call,
+  Stack memory is used for keeping track of what happens inside each function call,
 including variable values.
 The Method Area, or Metaspace in newer Java versions, stores information about
 the program's classes, like methods and constants.
@@ -274,8 +261,7 @@ and use less memory.
 systems, which might not be fully object -oriented.
 What is the use of object -oriented programming languages in the enterprise
 projects?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Object -oriented programming (OOP) is used in big projects to make coding easier to
+  Object -oriented programming (OOP) is used in big projects to make coding easier to
 handle. It helps organize code better, makes it easier to update and scale, and lets
 programmers reuse code, saving time and effort.
 Explain public static void main(string args[])?
@@ -309,8 +295,7 @@ named by a keyword. They have a fixed size and are not objects. Examples include
 double, char, and boolean.
 Non -primitive data types, on the other hand, are objects and classes that are not defined by
 Java itself but rather by the programmer or the Java API. They can be used to call methods
-GenZ Career on YouTube
-Subscribe for Interview Preparation  to perform certain operations, and their size is not fixed. Examples include String, arrays,
+  to perform certain operations, and their size is not fixed. Examples include String, arrays,
 and any class instances.
 Can primitive data types be NULL ?
 No, primitive data types in Java cannot be null. They have default values (e.g., 0 for
@@ -344,8 +329,7 @@ results because it compares object references, not values, for integers outside 
 cache range of -128 to 127.
 Is there a scenario where autoboxing and unboxing could cause a
 NullPointerException?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  A NullPointerException can occur if you unbox a null object; for example, assigning
+  A NullPointerException can occur if you unbox a null object; for example, assigning
 null to an Integer and then using it in a context where an int is expected.
 Can you explain the role of each try, catch, and finally block in exception handling?
 try block conatins code that might throw exceptions. catch handles those exceptions. finally
@@ -382,8 +366,6 @@ What is the difference between a Throwable and an Exception in Java?
 Throwable is the superclass for all errors and exceptions. Exception is a subclass of
 Throwable representing recoverable conditions, while Error (another subclass)
 represents serious issues the application should not attempt to recover from.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Discuss the difference between finalize() and finally. Under what circumstances
 might finalize() not get called in a Java application?
 finalize() is called by the garbage collector before an object is destroyed, while finally
@@ -418,8 +400,7 @@ What are the packages in Java?
 In Java, packages are namespaces that organize classes and interfaces into groups,
 preventing naming conflicts and managing access control. They provide a structured way to
 manage Java code, allowing related classes to be grouped together logically.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Why packages are used?
+  Why packages are used?
 1. They help in organizing code
 2. Packages prevent naming conflicts by providing a unique namespace
 3. Packages support modularity by allowing developers to separate the program
@@ -448,8 +429,7 @@ the class can have. Objects are instances of classes, representing entities with
 behaviors defined by their class.
 What are the ways to create an object?
 1. Using the new Keyword, example: MyClass object = new MyClass();
-GenZ Career on YouTube
-Subscribe for Interview Preparation  2. Using Class Factory Methods, example: Calendar calendar =
+  2. Using Class Factory Methods, example: Calendar calendar =
 Calendar.getInstance();
 3. Using the clone()
 Can a class in Java be without any methods or fields?
@@ -486,8 +466,6 @@ Can we use a private constructor?
 Yes, we can use private constructors in Java. They are mostly used in classes that
 provide static methods or contain only static fields. A common use is in the Singleton
 design pattern, where the goal is to limit the class to only one object.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Can constructor be overloaded?
 Yes, you can have multiple constructors in a Java class, each with a different set of
 parameters. This lets you create objects in various ways depending on what
@@ -521,8 +499,7 @@ Discuss the principle of "composition over inheritance". Provide an example wher
 this principle should be applied in Java application design.
 "Composition over inheritance" means using objects within other objects
 (composition) instead of inheriting from a parent class. It’s applied when classes
-GenZ Career on YouTube
-Subscribe for Interview Preparation  have a "has -a" relationship. For example, a Car class can have an Engine class as a
+  have a "has -a" relationship. For example, a Car class can have an Engine class as a
 field rather than inheriting from an Engine.
 What is the difference between association, aggregation, and composition in Java?
 Association is a general relationship between two classes. Aggregation is a weak
@@ -557,8 +534,7 @@ What happens if a class includes an abstract method?
 A class with an abstract method must itself be abstract. We can't create objects
 directly from an abstract class; it's meant to be a blueprint for other classes.
 How does abstraction help in achieving loose coupling in software applications?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Abstraction lets us hide complex details and only show what's necessary. This makes
+  Abstraction lets us hide complex details and only show what's necessary. This makes
 it easier to change parts of your program without affecting others, keeping different
 parts independent and easier to manage.
 What is interface in Java?
@@ -596,8 +572,6 @@ method in an interface?
 A static method in an interface belongs to the interface itself and cannot be
 overridden. A default method provides a default implementation for classes that
 implement the interface, and it can be overridden.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 What is the diamond problem in Java and how does Java address it?
 The diamond problem occurs in multiple inheritance where a class inherits from two
 classes with a common ancestor. Java resolves this by not allowing multiple
@@ -635,8 +609,7 @@ transient keyword. When a field is declared as transient, it is excluded from th
 serialization process, meaning its value will not be saved when the object is
 serialized.
 Can a class be serialized if one of its member fields is not serializable?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  A class can still be serialized even if one of its member fields is not serializable.
+  A class can still be serialized even if one of its member fields is not serializable.
 However, you must mark the non -serializable field as transient. If the field is not
 transient and is not serializable, attempting to serialize the object will result in a
 NotSerializableException.
@@ -671,8 +644,7 @@ What are the rules for method overloading in Java?
 The parameters must differ in how many there are, what type they are, or the order
 they are in.
 What is method overriding in Java?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  To override a method, the new method in the subclass must have the same name, return
+  To override a method, the new method in the subclass must have the same name, return
 type, and parameters as the method in the parent class. Also, the new method should not
 be less accessible than the original.
 What are the rules and conditions for method overriding in Java?
@@ -709,8 +681,6 @@ What is the static keyword in Java?
 The static keyword in Java is used to indicate that a particular member (variable or method)
 belongs to the class, rather than any instance of the class. This means that the static
 member can be accessed without creating an instance of the class.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Can a static block throw an exception?
 Yes, a static block can throw an exception, but if it does, the exception must be
 handled within the block itself or declared using a throws clause in the class.
@@ -744,8 +714,7 @@ unintended modifications and potential concurrency issues.
 Can you describe any performance considerations related to using final?
 The final keyword improves  the performance by reducing call overhead?
 What is functional interfaces?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Functional interfaces in Java are interfaces with just one abstract method. They are used to
+  Functional interfaces in Java are interfaces with just one abstract method. They are used to
 create lambda expressions and instances of these interfaces can be created with lambdas,
 method references, or constructor references.
 Can functional interface extend another interface?
@@ -783,8 +752,6 @@ introduced for strings
 Can you tell me some new features that were introduced in Java 17?
 Sealed Classes, Pattern Matching for switch, Foreign Function and Memory API are
 some of the examples
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Can you tell me some new features that were introduced in Java 21?
 Virtual Threads, Structured Concurrency, Scoped Values, Sequenced Collections,
 Record Pattern are some of the examples
@@ -820,8 +787,6 @@ What are some common methods available in all Collection types?
 Some common methods all collection types have are add, remove, clear, size, and
 isEmpty. These methods let us add and remove items, check the size, and see if the
 collection is empty.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 How does Java Collection Framework handle concurrency?
 The Collection Framework deals with multiple threads using special collection classes
 like ConcurrentHashMap and CopyOnWriteArrayList, which let different parts of our
@@ -857,8 +822,7 @@ We use HashSet where we need to ensure that there are no duplicates and we requi
 lookups, additions, and deletions. It is ideal for scenarios like checking membership
 existence, such as in a set of unique items or keys.
 How does a HashSet ensure that there are no duplicates?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  A HashSet in Java uses a HashMap under the hood. Each element you add is treated
+  A HashSet in Java uses a HashMap under the hood. Each element you add is treated
 as a key in this HashMap. Since keys in a HashMap are unique, HashSet automatically
 prevents any duplicate entries.
 Can you describe how hashCode() and equals() work together in a collection
@@ -895,8 +859,7 @@ In Java, when a HashMap encounters a collision (two keys with the same hashcode)
 it stores both entries in the same bucket. Prior to Java 8, it linked them in a simple
 list structure. In Java 8, if the number of entries in a bucket grows large, the list i s
 converted to a balanced tree for faster lookups.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Can you please tell me what changes were done for the HashMap in Java 8 because
+  Can you please tell me what changes were done for the HashMap in Java 8 because
 before java 8 hashMap behaved differently ?
 Before Java 8, HashMap dealt with collisions by using a simple linked list. Starting
 from Java 8, when too many items end up in the same bucket, the list turns into a
@@ -935,8 +898,7 @@ performing operations?
 HashMap  uses an array of nodes, where each node is a linked list or Tree depend
 upon the collisions and java versions ( From Java 8 onwards, if there is high hash
 collisons then linkedList gets converted to Balanced Tree).
-GenZ Career on YouTube
-Subscribe for Interview Preparation  TreeMap  uses a Red -Black tree, which is a type of self -balancing binary search tree.
+  TreeMap  uses a Red -Black tree, which is a type of self -balancing binary search tree.
 Each node in the Red -Black tree stores a key -value pair.
 HashSet internally uses a HashMap whereas TreeSet internally uses TreeMap
 Design Patterns  and Principles Basics
@@ -972,8 +934,7 @@ Use a TreeMap when you need to maintain a sorted order of keys, such as when
 iterating over sorted data. A HashMap is preferable for fast lookups without concern
 for ordering.
 Can we add objects as a key in TreeMap?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Yes, objects can be used as keys in a TreeMap if they implement the Comparable
+  Yes, objects can be used as keys in a TreeMap if they implement the Comparable
 interface or a Comparator is provided for sorting the keys.
 What are SOLID Principles?
 'S' stands for  Single Responsibility Principle: It means a class should only have one reason
@@ -1012,8 +973,7 @@ extending the Thread class or implementing the Runnable interface.
 Can you explain the lifecycle of a Java thread?
 A Java thread lifecycle includes states: New, Runnable, Blocked, Waiting, Timed
 Waiting, and Terminated.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  How would you handle a scenario where two threads need to update the same
+  How would you handle a scenario where two threads need to update the same
 data structure?
 Use synchronized blocks or methods to ensure that only one thread can access the
 data structure at a time, preventing concurrent modification issues.
@@ -1047,8 +1007,6 @@ The Java Memory Model (JMM) defines the rules by which Java programs achieve
 consistency when reading and writing variables across multiple threads, ensuring all
 threads have a consistent view of memory.
 Miscellaneous  questions  (Not too much important)
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 what is transient?
 The transient keyword in Java is used to indicate that a field should not be serialized.
 This means it will be ignored when objects are serialized and deserialized.

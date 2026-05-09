@@ -1,8 +1,7 @@
 # Core Java Advanced & Coding
 
 ## Step-3-Core-Java-Level-III
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Index
+  Index
 Intermediate Core  Java ………………………………………………………………………………… ….   1
 Java 8 ……………………………………………………………………………………………… ……………….    12
 Concurrency and Multithreading ………………………………………………….… ……………….   20
@@ -33,8 +32,6 @@ when you want to ensure that the functionality of a method remains consistent an
 regardless of inheritance. It provides a safeguard that the m ethod will behave the same way, even in
 derived classes, maintaining the original behavior and preventing any alteration or unexpected
 behavior in the program.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 5) Can method overloading be determined at runtime?
 No, method overloading cannot be determined at runtime; it is resolved at compile -time. Method
 overloading occurs when multiple methods have the same name but different parameters within the
@@ -66,8 +63,7 @@ static nested classes can contain static methods, fields, or blocks. However, no
 which are associated with an instance of the outer c lass, cannot contain any static members. The
 reason is that static members belong to the class rather than an instance, and non -static inner
 classes are intimately linked to the outer class's instance.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  10) What is the significance of an anonymous inner class?
+  10) What is the significance of an anonymous inner class?
 Anonymous inner classes in Java are useful when you need to implement an interface or extend a
 class without creating a separate named class. They are defined and instantiated all at once, typically
 at the point of use. This is particularly helpful for han dling events or creating runnable objects in GUI
@@ -101,8 +97,7 @@ enhancing security controls .
 15) How does Java determine which method to call in the case of method overloading?
 In the case of method overloading, Java determines which method to call based on the method's
 signature. This includes the method name and the number and types of parameters. The compiler
-GenZ Career on YouTube
-Subscribe for Interview Preparation  looks at the arguments passed during the method call and matches them to the method that has the
+  looks at the arguments passed during the method call and matches them to the method that has the
 corresponding parameter types. If it finds an exact match, it executes that method. If it doesn’t find a
 match or if the call is ambiguous, it results in a com pile-time error.
 16) What happens if two packages have the same class name?
@@ -136,8 +131,6 @@ changes after it’s been used as a key, its hashcode can change, making it impo
 map even though it's still there. This results in a loss of access to that entry, effectively causing data
 loss and potential memory leaks. Therefore, it's best to use immutable objects as keys to maintain
 consistent behavior and reliable access.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 21) What would happen if you override only the equals() method and not hashCode() in a custom
 key class used in HashMap?
 If you override only the equals() method without overriding hashCode() in a custom key class used in
@@ -172,8 +165,6 @@ but only if the custom objects implement the Comparable  interface. This interfa
 a compareTo  method, which specifies the natural ordering of the objects. If the objects do not
 implement Comparable , or if the compareTo  method is not implemented, attempting to sort without
 a Comparator  will result in a ClassCastException.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 26) What is the difference between using Collections.sort() and Stream.sorted() in Java 8+?
 The difference between Collections.sort()  and Stream.sorted()  in Java 8+ lies in how they handle
 data and output. Collections.sort()  modifies the list it sorts directly, changing the original data
@@ -207,8 +198,7 @@ exceptions can include IOException for input/output issues. These exceptions pre
 from being properly converted into a byte stream, disrupting the storage or transmission of its state.
 31) What happens if your Serializable class contains a member which is not serializable? How do
 you fix it?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  If your Serializable class contains a member that is not serializable, you'll encounter a
+  If your Serializable class contains a member that is not serializable, you'll encounter a
 NotSerializableException  when you try to serialize the class. To fix this, you can either make the non -
 serializable member transient, which means it won't be included in the serialization process, or
 ensure that the member class also implements the Serializable  interface. Alternatively, you can
@@ -242,8 +232,7 @@ string instead of creating a new one, reducing memory overhead.
 36) What is the difference between Lambda vs. Anonymous Classes?
 Lambda expressions and anonymous classes in Java both provide ways to implement methods from a
 functional interface, but they do so differently. Lambdas are more concise and focused on passing
-GenZ Career on YouTube
-Subscribe for Interview Preparation  behavior or functionality, often written in a single line of code without a name. Anonymous classes,
+  behavior or functionality, often written in a single line of code without a name. Anonymous classes,
 on the other hand, are more verbose, require a class declaration, and can be used to create instances
 of interfaces or abstract classes with methods. Lambd as generally lead to clearer, more readable
 code compared to anonymous classes.
@@ -276,8 +265,7 @@ making code cleaner. Static imports, introduced in Java 5, a llow direct access 
 (fields and methods) of a class without qualifying them with the class name. This is useful when you
 need frequent access to static methods, like Math.sqrt() or constants like PI, simplifying the code.
 41) What is the impact of static imports on code readability and maintainability?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Static imports can improve code readability by reducing repetitive class references, making the code
+  Static imports can improve code readability by reducing repetitive class references, making the code
 more concise. For example, instead of writing Math.PI, you can just use PI. However, overusing static
 imports can harm maintainability, as it becomes harde r to know where methods or constants are
 coming from, especially in larger projects. The lack of clarity can confuse developers unfamiliar with
@@ -310,8 +298,7 @@ modify the session data.
 Example:
 Map<String, SessionData> sessionMap = new ConcurrentHashMap<>();
 46) Can an interface with multiple default methods still be a functional interface?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  No, an interface with multiple default methods cannot be a functional interface. A functional
+  No, an interface with multiple default methods cannot be a functional interface. A functional
 interface is defined as an interface with only one abstract method, which allows it to be used with
 lambda expressions. Default methods are concrete (non -abstract ), so having multiple default
 methods is fine, but as long as there's only one abstract method, the interface can still be functional.
@@ -345,8 +332,7 @@ compare and sort the objects.
 would you resolve method conflicts?
 When a class implements multiple interfaces that have default methods with the same signature,
 you must resolve the conflict by overriding the method in your class. In the overridden method, you
-GenZ Career on YouTube
-Subscribe for Interview Preparation  can explicitly choose which interface's default method to use by using the syntax
+  can explicitly choose which interface's default method to use by using the syntax
 InterfaceName.super.methodName(). This tells your class exactly which version of the conflicting
 method to execute, thus resolving the ambiguity.
 52) How do JVM optimizations affect the performance of Java applications?
@@ -379,8 +365,7 @@ Each class needs memory for its metadata, methods, and associated objects. This 
 necessary for the JVM to use the class, but if many classes are  loaded, or large libraries are in use,
 memory consumption can increase significantly. Proper management of class loaders can help in
 optimizing memory usage, especially in large applications.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  57) Can you serialize static fields in Java?
+  57) Can you serialize static fields in Java?
 In Java, static fields are not serialized. Serialization in Java is focused on saving the state of an object,
 and static fields are part of the class state, not individual object state. Therefore, static fields are
 common to all instances of the class and remain unchanged based on individual object serialization.
@@ -410,8 +395,7 @@ lambda expressions include reducing the amount of boiler plate code, enhancing r
 making it easier to use functional programming patterns. They are particularly useful for simplifying
 code when using collections and APIs that support concurrency, such as the Stream API.
 3) What is the difference between a Lambda Expression and an Anonymous Inner Class?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Lambda expressions and anonymous inner classes in Java both enable you to implement methods
+  Lambda expressions and anonymous inner classes in Java both enable you to implement methods
 without declaring a formal class, but they differ significantly in simplicity and functionality. Lambda
 expressions are more concise and focus on passing a single p iece of functionality, typically to a single
 method in a functional interface. In contrast, anonymous inner classes are more verbose and can
@@ -446,8 +430,7 @@ results —essentially transforming each element into a new for m. Conversely, f
 function to elements, but each function result is expected to be a stream itself; flatMap() then
 "flattens" these multiple streams into a single stream. This is particularly useful for handling nested
 collections or arrays.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  8) How can you filter a collection using Streams in Java 8?
+  8) How can you filter a collection using Streams in Java 8?
 In Java 8, you can filter a collection using the Streams API by converting the collection to a stream,
 applying a filter() method, and then specifying a condition within the filter method. The filter()
 method takes a predicate, which is a functional interf ace representing a condition that each element
@@ -481,8 +464,7 @@ returns an Optional object that is either empty (if the va lue is null) or conta
 then use methods like orElse() to provide a default value if the Optional is empty, or ifPresent() to
 execute a block of code only if a value is present. This approach helps avoid NullPointerException and
 makes y our code cleaner and safer.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  13) What is the difference between findFirst() and findAny() in Streams?
+  13) What is the difference between findFirst() and findAny() in Streams?
 In Java Streams, findFirst() and findAny() are terminal operations that return an Optional describing
 an element of the stream. findFirst() returns the first element in the stream according to the
 encounter order, which is particularly useful in sequential  streams. On the other hand, findAny() can
@@ -516,8 +498,6 @@ on objects of a specific type. Predicates are oft en used for filtering or match
 in the Streams API, the filter() method uses a Predicate to determine which elements should be
 included in the resulting stream based on whether they satisfy the predicate. This functionality is
 cruci al for conditional operations in collection processing.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 18) How do you create an infinite stream in Java 8?
 In Java 8, you can create an infinite stream using the Stream.iterate or Stream.generate methods.
 Stream.iterate repeatedly applies a given function to a seed value to produce an infinite sequence,
@@ -553,8 +533,6 @@ elements of the stream. Reduce() is useful for performing operatio ns like summi
 list, finding the maximum or minimum value, or accumulating elements into a single result. This
 method essentially reduces a stream of elements to one summary result based on the provided
 operation.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 23) How does the filter() method work in Java 8?
 The filter() method in Java 8's Streams API is used to evaluate each element in a stream against a
 given predicate, which is a functional interface that defines a condition returning a boolean value.
@@ -586,8 +564,7 @@ stream. limit(n) is used to truncate the stream so that it contains no more than
 effectively limiting the number of items processed downstream. On  the other hand, skip(n) discards
 the first n elements of the stream, allowing the stream to start processing from the element that
 follows. Together, these methods help in controlling stream flow for specific processing needs.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  28) Explain how to convert a list to a map using Streams in Java 8.
+  28) Explain how to convert a list to a map using Streams in Java 8.
 In Java 8, you can convert a list to a map using the Streams API by utilizing the
 collect(Collectors.toMap()) method. First, convert the list into a stream. Then, use toMap() where
 you specify functions for determining the keys and values for the map. For example, if you have a list
@@ -622,8 +599,6 @@ instance of the class where the lambda is created, and super refers to the super
 Therefore, while you can use this and super in lambda expressions, they do not behave as they might
 be expected to within traditional methods or anonymous inner classes, where they refer directly to
 the curr ent or parent class object respectively.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 33) How can a Lambda expression access variables outside its scope? What is the concept behind
 it?
 Lambda expressions in Java can access variables outside their scope, specifically final or effectively
@@ -657,8 +632,7 @@ stability.
 37) Can you use Optional as a method parameter? Why should or shouldn’t you do this?
 Using Optional as a method parameter in Java is technically possible but generally discouraged. The
 primary purpose of Optional is to provide a more expressive alternative to null references and to
-GenZ Career on YouTube
-Subscribe for Interview Preparation  enhance readability and safety in APIs by clearly indicating that a method might not return a value.
+  enhance readability and safety in APIs by clearly indicating that a method might not return a value.
 Using Optional as a parameter complicates method signatures and usage, potentially obscuring
 intent and leading to less clean code. Instead, it's better to  use Optional for return types where it
 clarifies that a method might not produce a value.
@@ -686,8 +660,7 @@ Concurrency and Multithreading
 To ensure safe access to a shared resource by multiple threads in Java, you can use synchronization.
 This involves using the synchronized keyword to lock an object or a method while a thread is using it.
 Only one thread can hold the lock at a time, preventi ng other threads from accessing the locked code
-GenZ Career on YouTube
-Subscribe for Interview Preparation  until the lock is released. This mechanism helps avoid conflicts and data corruption by ensuring that
+  until the lock is released. This mechanism helps avoid conflicts and data corruption by ensuring that
 only one thread can modify the shared resource at any given time.
 2) Explain the synchronized keyword in Java. How does it work?
 The synchronized keyword in Java is used to control access to a critical section of code by locking an
@@ -720,8 +693,7 @@ Java provides a rich set of tools and APIs, like Thread class , Runnable interfa
 utilities in the java.util.concurrent  package, to manage and synchronize these threads. This model
 allows multiple threads to run in parallel, enhancing performance especially in multi -core processors.
 Synchronization and coordination between threads are achieved through mechanisms like locks ,
-GenZ Career on YouTube
-Subscribe for Interview Preparation  synchronized blocks/methods, and concurrent data structures, ensuring safe communication
+  synchronized blocks/methods, and concurrent data structures, ensuring safe communication
 between threads.
 7) What are the challenges associated with Java’s thread management?
 Java's thread management presents several challenges, including the complexity of ensuring thread
@@ -755,8 +727,7 @@ Java handles multi -threading by allowing multiple threads to run concurrently w
 application, using the Thread  class and the Runnable  interface to define and manage threads. Java
 provides built -in support for thread lifecycle management, synchronization, and inter -thread
 communication to ensure threads operate safely without interfering with each other. The Java
-GenZ Career on YouTube
-Subscribe for Interview Preparation  concurrency API, including utilities like ExecutorService and ConcurrentHashMap, further simplifies
+  concurrency API, including utilities like ExecutorService and ConcurrentHashMap, further simplifies
 multi -threaded programming and enhances performance and scalability.
 12) What are the differences between Runnable and Callable in Java concurrency?
 In Java concurrency, both Runnable  and Callable  interfaces are used to execute tasks
@@ -789,8 +760,7 @@ provide?
 The ExecutorService  in the Java Executor Framework plays a crucial role in managing and controlling
 thread execution. It provides a higher -level replacement for working directly with threads, offering
 methods to manage lifecycle operations like starting, running, and stoppin g threads efficiently. Some
-GenZ Career on YouTube
-Subscribe for Interview Preparation  key methods it provides include submit() for executing callable tasks that return a result, execute()
+  key methods it provides include submit() for executing callable tasks that return a result, execute()
 for running runnable tasks, and shutdown()  to stop the executor service gracefully once tasks are
 completed.
 17) What is the difference between submit() and execute() methods in the Executor Framework?
@@ -824,8 +794,7 @@ facilitating  more complex synchronization scenarios.
 21) What happens when an exception occurs inside a synchronized block?
 When an exception occurs inside a synchronized block in Java, the lock that was acquired when
 entering the synchronized block is automatically released. This allows other threads to enter the
-GenZ Career on YouTube
-Subscribe for Interview Preparation  synchronized block or method once the current thread has exited due to the exception. Essentially,
+  synchronized block or method once the current thread has exited due to the exception. Essentially,
 the synchronized mechanism ensures that locks are managed cleanly, even in the event of an
 exception, preventing deadlocks and allowing program execution to continue in other threads.
 22) How do you get a thread dump in Java?
@@ -857,8 +826,7 @@ Memory Management
 1) How does Java handle memory leaks?
 Java handles potential memory leaks primarily through its automatic garbage collection mechanism,
 which periodically frees up memory used by objects that are no longer accessible in the program.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  However, memory leaks can still occur if references to objects are unintentionally retained,
+  However, memory leaks can still occur if references to objects are unintentionally retained,
 preventing the garbage collector from reclaiming that memory. Developers must be vigilant about
 managing resources, such as closing files and network connections, and being cautious with static
 collections that can inadvertently hold objects indefinitely.
@@ -892,8 +860,7 @@ identified as unreachable and eligible for garbage collection.
 6) How does the static keyword affect memory management in Java?
 In Java, the static keyword affects memory management by allocating memory for static fields and
 methods not with individual instances but at the class level. This means that static elements are
-GenZ Career on YouTube
-Subscribe for Interview Preparation  stored in the Java method area, a part of the heap memory dedicated to storing class structures and
+  stored in the Java method area, a part of the heap memory dedicated to storing class structures and
 static content. Static elements are created when the class is loaded by the JVM and remain in
 memory as long as the class stays loaded, shared among all ins tances of that class.
 7) What is the difference between NoClassDefFoundError and ClassNotFoundException?
@@ -923,8 +890,7 @@ into native machine code that runs faster on the proce ssor. It also employs met
 collection optimization and inlining functions to reduce memory usage and execution time. These
 optimizations help Java programs run faster and more smoothly, making efficient use of system
 resources.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Exception Handling
+  Exception Handling
 1) What happens when an exception is thrown in a static initialization block?
 When an exception is thrown in a static initialization block in Java, it prevents the class from being
 loaded properly. This results in a java.lang.ExceptionInInitializerError. If an attempt is made to use the
@@ -956,8 +922,7 @@ release a resource they need to continue, resulting in all involved threads bein
 To prevent deadlocks, ensure that all threads acquire loc ks in a consistent order, avoid holding
 multiple locks if possible, and use timeout options with lock attempts. Another strategy is to use a
 lock hierarchy or a try -lock method to manage resources dynamically without stalling.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  6) What issues might arise when both method overloading and overriding are used in the same
+  6) What issues might arise when both method overloading and overriding are used in the same
 class hierarchy?
 Using both method overloading and overriding in the same class hierarchy can lead to confusion and
 errors in Java. Overloading methods within a class allows multiple methods with the same name but
@@ -973,8 +938,6 @@ application should not attempt to handle because they are often related to syste
 Catching Throwable may prevent the propagation of errors that should naturally cause the program
 to terminate, potentially l eading to system instability or corrupting application state.
 ## Common-Step-Java-Coding
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Java Most Asked Coding Questions for Interviews
 Q #1) Write a Java Program to reverse a string without using String inbuilt
 function.
@@ -1024,9 +987,6 @@ public Map<String, Integer> countWords(String input) {
 Map<String, Integer> wordCount = new HashMap<>();
 String[] words = input.split(" \\s+");
 ```
-
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 
 ```java
 for (String word : words) {
@@ -1086,8 +1046,6 @@ through potential factors up to the square root of the number, checking divisibi
 intervals to efficiently determine if a number is prime.
 Q #6) Write a Java Program to find whether a string or number is
 palindrome or not.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Answer :
 
 ```java
@@ -1142,8 +1100,6 @@ System.out.println(item);
 }
 ```
 
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Explanation : This method demonstrates three different ways to iterate through an
 ArrayList : using a traditional for -loop, a while -loop, and an enhanced for -loop.
 Q #9) Write a Java Program to find the duplicate characters in a string.
@@ -1204,9 +1160,6 @@ sum += Math.pow(digit, digits);
 number /= 10;
 ```
 
-GenZ Career on YouTube
-Subscribe for Interview Preparation
-
 ```java
 }
 return sum == original;
@@ -1258,8 +1211,6 @@ complement are returned.
 Q #14) Write a program that accepts comma -separated strings, sorts the
 strings in ascending order, and outputs the concatenated string of sorted
 strings.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Solution :
 
 ```java
@@ -1326,8 +1277,6 @@ for (int j = 0; j < nums.length; j++) {
 if (nums[j] != val) {
 ```
 
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 nums[i] = nums[j];
 i++;
 
@@ -1389,8 +1338,6 @@ List<Integer> result = new ArrayList <>();
 if (s.length() == 0 || p.length() > s.length()) return result;
 ```
 
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 int[] charCount = new int[26];
 
 ```java
@@ -1454,8 +1401,6 @@ public ListNode mergeTwoLists (ListNode l1, ListNode l2)  {
 ListNode  dummy = new ListNode (0);
 ```
 
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 ListNode  current = dummy;
 
 ```java
@@ -1507,8 +1452,6 @@ Explanation : The matrix is rotated by first transposing it (swapping rows with 
 then reversing each row.
 Q #22) Given a non -negative integer num , repeatedly add all its digits until the
 result has only one digit.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Solution :
 
 ```java
@@ -1562,8 +1505,6 @@ with zeros.
 Q #25) Given an array nums  of n integers where nums[i]  is in the range [1, n] ,
 return an array of all the integers in the range [1, n]  that do not appear in
 nums .
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Solution :
 
 ```java

@@ -5453,8 +5453,6 @@ s.salary
 Innova
 Solutions
 ## Step-12-Spring-Data-JPA-and-Other-DB-Level-I
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 Spring JPA Interview Questions and Answers
 1) What is Spring Data JPA?
 Spring Data JPA is part of the Spring Data project, which aims to simplify data access in Spring -based
@@ -5485,8 +5483,6 @@ We can write custom queries using the @Query annotation. For example:
 @Query("SELECT u FROM User u WHERE u.firstName = :firstName")
 List<User> findByFirstName(@Param("firstName") String firstName);
 6) What is the purpose of save() method in CrudRepository?
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 The save() method in CrudRepository is used to save or update an entity. If the entity has a primary
 key, Spring Data JPA will determine whether to perform an insert or an update operation based on
 whether the entity already exists in the database.
@@ -5517,8 +5513,6 @@ FetchType.Eager specifies that the related entities should be fetched eagerly al
 entity, potentially leading to performance issues due to loading unnecessary data. FetchType.Lazy
 specifies that the related entities should be fetched lazily  on demand, improving performance by
 loading them only when needed.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 13) Use of @Id annotation.
 The @Id annotation is used to specify the primary key of an entity. It marks a field or property as the
 unique identifier for the entity, allowing the persistence provider to recognize and manage entity
@@ -5550,8 +5544,6 @@ specify the page number, page size, sorting, etc.
 Some commonly used methods in CrudRepository include save() to save or update entities,
 findById() to find entities by their primary key, deleteById() to delete entities by their primary key,
 findAll() to retrieve all entities, and count() to count the num ber of entities.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 20) Difference between delete() and deleteInBatch() methods.
 delete() method deletes a single entity from the database, while deleteInBatch() method deletes all
 entities passed as a collection in a single batch operation. The latter is more efficient for deleting
@@ -5584,8 +5576,6 @@ requirements.
 implement caching in Spring JPA to improve performance?
 To implement caching in Spring JPA, I use the Spring Cache abstraction with a cache provider like
 EHCache or Redis. I annotate frequently accessed data retrieval methods in the repository with
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 @Cacheable. This stores the result in the cache for subsequent requests, reducing the need to query
 the database repeatedly and thus improving performance.
 Hibernate Most Asked Interview Questions  (Optional)
@@ -5624,8 +5614,6 @@ transaction management mechanism of the underlying platform.
 HQL stands for Hibernate Query Language, a portable, database -independent query language
 defined by Hibernate. It is object -oriented, understanding notions like inheritance, polymorphism,
 and association.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 
 - [ ] **Q7. What is the Criteria API in Hibernate?**
 
@@ -5671,8 +5659,6 @@ number of queries executed.
 
 - [ ] **Q14. Explain the role of the @Entity annotation in Hibernate.**
 
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 The @Entity annotation in Hibernate is used to mark a class as an entity, which means it is a mapped
 object and its instance can be persisted to the database.
 
@@ -5715,8 +5701,6 @@ of a record at the time of fetching and before committi ng an update to ensure c
 - [ ] **Q21. You have noticed that your Hibernate application is running slowly when fetching data from a**
 
 database with many relationships. What strategy could you use to improve performance?
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 To optimize query performance in Hibernate, I would consider using lazy loading for entity
 relationships. This means Hibernate will only fetch related entities when they are explicitly accessed,
 not at the time of fetching the parent entity. Additionally, I might use batch fetching and adjust the

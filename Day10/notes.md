@@ -1,8 +1,7 @@
 # Testing & Kafka
 
 ## Step-17-Junit-and-Mockito
-GenZ Career on YouTube
-Subscribe for Interview Preparation  JUnit Questions
+  JUnit Questions
 1) What is JUnit, and why is it important for unit testing?
 JUnit is a popular testing framework for Java that simplifies the process of writing and running unit
 tests. It allows developers to create test cases as simple methods annotated with @Test, making it
@@ -34,8 +33,7 @@ values. This is useful for checking how a method behaves with various data. You 
 with the @RunWith(Parameterized.class) annotation, then prov ide a method annotated with
 @Parameters that returns a collection of test data. Each set of parameters is passed to the test
 method, enabling efficient testing of multiple scenarios with less code duplication.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  6) What is a test suite in JUnit, and how do you create it?
+  6) What is a test suite in JUnit, and how do you create it?
 A test suite in JUnit is a collection of test classes that can be run together, allowing you to organize
 and execute multiple tests as a group. To create a test suite, use the @Suite annotation along with
 the @RunWith(Suite.class) annotation on a class. Th en, specify the test classes to include within the
@@ -69,8 +67,7 @@ method within a given scope of a test.
 In JUnit, @RunWith and @Rule are annotations used to enhance how tests are run. @RunWith
 allows you to specify a custom runner that changes the behavior of how your test classes are
 executed. For example, it can be used to run tests with special configurati ons or with a different
-GenZ Career on YouTube
-Subscribe for Interview Preparation  testing framework. On the other hand, @Rule applies specific functionality to every test method in a
+  testing framework. On the other hand, @Rule applies specific functionality to every test method in a
 class, like repeating tests or handling exceptions in a standard way.
 12) Tricky: How would you test private methods in JUnit? Should you test them directly?
 In JUnit, testing private methods directly isn't recommended because it goes against the principles of
@@ -101,8 +98,7 @@ teardown tasks with @Before and @After annotations. Regularly refactor tests to 
 maintainability, just as you would with production code.
 Mockito Questions
 1) What is Mockito, and why is it used in unit testing?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Mockito is a popular Java library used in unit testing to create mock objects. It is used to simulate the
+  Mockito is a popular Java library used in unit testing to create mock objects. It is used to simulate the
 behavior of complex, real objects in a controlled way. Mockito allows you to set up expectations,
 specify the behavior of mocks, and verify that certa in operations were performed. This is particularly
 useful when you need to test parts of your code in isolation from external systems like databases or
@@ -135,8 +131,7 @@ monitor specific behaviors of an object while keeping the rest unchanged.
 To mock a method that returns void in Mockito, you use the doNothing() method. First, you specify
 the method on your mock object with doNothing() and then chain it with when() to set the condition
 under which the method should do nothing. This is useful fo r methods that perform actions like
-GenZ Career on YouTube
-Subscribe for Interview Preparation  sending emails or logging, where you want to ensure these actions are skipped during testing,
+  sending emails or logging, where you want to ensure these actions are skipped during testing,
 allowing you to focus on other aspects of your code’s behavior.
 7) What are the use cases for doReturn(), doThrow(), and doAnswer() in Mockito?
 In Mockito, doReturn(), doThrow(), and doAnswer() are methods used to specify behaviors of mock
@@ -169,8 +164,7 @@ passed to the method and assert that its fields are set correctly.
 To mock static methods in Mockito, you need to use the Mockito extension called Mockito -inline.
 First, enable static method mocking by using try (MockedStatic<YourClass> mocked =
 Mockito.mockStatic(YourClass.class)). Inside this block, you can specify how the stati c methods of
-GenZ Career on YouTube
-Subscribe for Interview Preparation  YourClass should behave using when() and thenReturn() or doReturn(). This is useful for isolating
+  YourClass should behave using when() and thenReturn() or doReturn(). This is useful for isolating
 tests from static dependencies that are otherwise hard to replace or configure.
 12) Tricky: What is the difference between verify() and verifyNoMoreInteractions() in Mockito?
 In Mockito, verify() is used to check that specific interactions with a mock object have occurred, such
@@ -204,8 +198,7 @@ The difference between a stub and a mock lies in their intended use and function
 stub is a simplistic implementation that returns hard -coded values, used mainly to fill parameter lists
 or set up a test environment. Its purpose is to repl ace complex real objects and provide predictable
 outputs. A mock, on the other hand, is more sophisticated; it not only returns predefined outputs
-GenZ Career on YouTube
-Subscribe for Interview Preparation  but also verifies how it is interacted with, such as checking the number of method calls or the order
+  but also verifies how it is interacted with, such as checking the number of method calls or the order
 of operations, which is crucial for verifying interactions between components.
 17) How do you mock objects in Mockito when using constructor injection?
 To mock objects in Mockito when using constructor injection, create mocks for the dependencies
@@ -237,8 +230,7 @@ their behavior. Verify results with JUnit’s assert methods, and use Mockito's 
 interactions occurred as expected. This combination ensures isolated and reliable unit testing for
 complex code with dependencies .
 ## Step-13-Kafka-Optional
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Kafka Most Asked Interview Questions
+  Kafka Most Asked Interview Questions
 1) What is Apache Kafka?
 Apache Kafka is a tool that helps different parts of an application share information by sending
 messages quickly and efficiently. It's like a post office for data, ensuring that messages are sent,
@@ -267,8 +259,7 @@ different servers, which helps handle more data at once and allo ws many users t
 simultaneously without slowing down the system. This setup helps manage large amounts of data
 efficiently.
 6) How do you create a topic in Kafka?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  To create a topic in Kafka, I use a command -line tool provided by Kafka. I run a command that
+  To create a topic in Kafka, I use a command -line tool provided by Kafka. I run a command that
 includes the name I want for the topic, how many parts (partitions) it should be split into, and how
 many copies (replication factor) of the data should be kept. Here's a simple example of the
 command: kafka -topics.sh --create --bootstrap -server server_address --replication -factor 1 --
@@ -298,8 +289,7 @@ distributed across them. It also decides which server leads when multi ple ones 
 data, ensuring everything is consistent and avoiding data loss. Essentially, Zookeeper acts as a
 coordinator for Kafka's operations, making it reliable and efficient.
 11) What would happen if Zookeeper were to fail?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  If Zookeeper fails in a Kafka system, it causes problems in managing the Kafka servers. Without
+  If Zookeeper fails in a Kafka system, it causes problems in managing the Kafka servers. Without
 Zookeeper, the servers might not know which one should be in charge of a particular data set, and
 new servers can't join properly. This can lead to difficulties  in sending and receiving messages
 correctly, potentially causing data loss or system interruptions. Essentially, Zookeeper's failure can
@@ -327,8 +317,7 @@ balance the workload. They keep track of which messages they have a lready read 
 way, if something goes wrong or they need to restart, they can pick up right where they left off,
 making sure they don't miss any data.
 16) How can consumer groups enhance the scalability of Kafka?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Consumer groups make Kafka more scalable by sharing the work among multiple consumers. Each
+  Consumer groups make Kafka more scalable by sharing the work among multiple consumers. Each
 consumer in the group reads from a different part of a topic, so they can process data at the same
 time. If the amount of data grows, we can add more consumers to the group to handle the extra
 load. This way, Kafka can manage large amounts of data efficiently and quickly, making the system
@@ -359,8 +348,7 @@ which is fast but risky because data could be lost if something goes wrong.
 Kafka Streams is a tool that helps build real -time applications that process data as it arrives. It reads
 data from Kafka topics and allows us to transform, filter, combine, and analyze this data on the fly.
 Common uses include real -time analytics, monitoring systems, and tracking financial transactions.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Kafka Streams makes it easy to handle complex data processing directly within Kafka, making
+  Kafka Streams makes it easy to handle complex data processing directly within Kafka, making
 applications scalable and reliable without needing extra processing systems.
 22) What differentiates Kafka Streams from other stream processing libraries?
 Kafka Streams is different from other stream processing tools because it’s easy to use, works directly
@@ -390,8 +378,7 @@ secure network design for extra protection.
 Kafka has several security features: SSL/TLS to encrypt data while it’s being sent, SASL for verifying
 the identities of clients and brokers, and Access Control Lists (ACLs) to control who can access and
 use data. Kafka can also use Kerberos for strong aut hentication. Additionally, Kafka supports
-GenZ Career on YouTube
-Subscribe for Interview Preparation  encrypting stored data and securing communication with ZooKeeper. These features help keep data
+  encrypting stored data and securing communication with ZooKeeper. These features help keep data
 safe and ensure secure communication in Kafka.
 27) How would you implement encryption in Kafka?
 To encrypt data in Kafka, set up SSL/TLS for secure communication. First, create SSL certificates for
@@ -422,8 +409,7 @@ Keep an eye on performance and adjust resources as nee ded. Make sure connectors
 handle more data. Manage CPU and memory resources well and tweak settings to improve data
 processing speed and reduce delays.
 32) What are some common issues you might encounter while using Kafka Connect?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Common issues with Kafka Connect include incorrect connector settings that stop data transfer, and
+  Common issues with Kafka Connect include incorrect connector settings that stop data transfer, and
 performance slowdowns due to not enough resources or poor setup. Data may become inconsistent
 if connectors fail or lose their place. Network problems can in terrupt data flow. Handling large
 amounts of data can cause delays and reduce speed. Upgrading connectors and making sure they
@@ -457,8 +443,7 @@ producer, sending messages, and committing the transaction. This can be done usi
 beginTransaction, send, and commitTransaction methods.
 • Consumer Configuration:  Configure consumers to commit offsets only after the transaction
 is successfully completed, ensuring that messages are processed exactly once.
-GenZ Career on YouTube
-Subscribe for Interview Preparation  36) You need to update the schema of the messages being produced to a Kafka topic without
+  36) You need to update the schema of the messages being produced to a Kafka topic without
 disrupting the existing consumers. How do you handle schema evolution in Kafka?
 To handle schema evolution in Kafka:
 • Use Schema Registry:  Utilize Confluent Schema Registry to manage and version schemas.
@@ -495,8 +480,6 @@ MB) and causing performance issues?
 Increase the message size limit by configuring the max.message.bytes property on both the broker
 and producer. Alternatively, split large messages into smaller chunks at the producer side and
 reassemble them on the consumer side to handle them efficiently.
-GenZ Career on YouTube
-Subscribe for Interview Preparation
 40) How would you handle a situation where your Kafka consumer group is significantly lagging
 behind in consuming messages?
 Scale the number of consumer instances to process messages in parallel. Optimize the consumer's
@@ -526,8 +509,7 @@ Rebalancing can take time due to offset commit synchronization and partition rea
 reduce rebalancing time, fine -tune configurations like session.timeout.ms and max.poll.interval.ms.
 Use sticky partition assignment to reduce unnecessary movement of partitions.
 46) Is it possible to lose data in Kafka despite having replication set up? If so, how?
-GenZ Career on YouTube
-Subscribe for Interview Preparation  Yes, data loss can occur if acks=1 is used, meaning only the leader acknowledges writes. If the leader
+  Yes, data loss can occur if acks=1 is used, meaning only the leader acknowledges writes. If the leader
 fails before replication, data may be lost. Using acks=all, setting a proper replication factor, and
 ensuring min.insync.replicas are set correctly mitig ates this risk.
 47) When would you prefer using a compacted topic over a regular topic, and what are the trade -
