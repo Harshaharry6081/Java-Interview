@@ -455,27 +455,32 @@ async function loadMarkdown(file) {
       const input = li.querySelector('input[type="checkbox"]');
       const isCheckable = !!input;
       
-      const idx = checkIdx++;
-      const wasChecked = isCheckable ? (checked.has(idx) || input.checked) : false;
-      if (isCheckable && wasChecked) checked.add(idx);
+      // Skip regular non-checklist items
+      if (!isCheckable) return;
 
-      if (isCheckable) input.remove();
+      // Mark the parent list as a question block
+      li.closest('ul, ol').classList.add('question-list');
+      
+      const idx = checkIdx++;
+      const wasChecked = (checked.has(idx) || input.checked);
+      if (wasChecked) checked.add(idx);
+
+      input.remove();
       const labelText = li.innerHTML.trim();
 
       // Wrap content and add play button
       li.innerHTML = `
-        <span class="checkbox-icon">${isCheckable ? (wasChecked ? '✓' : '') : ''}</span>
+        <span class="checkbox-icon">${wasChecked ? '✓' : ''}</span>
         <span class="li-text">${labelText}</span>
         <button class="item-play-btn" title="Read this">▶</button>
       `;
       li.dataset.idx = idx;
-      if (isCheckable) li.classList.add('is-checkable');
-      if (isCheckable && wasChecked) li.classList.add('checked');
+      li.classList.add('is-checkable');
+      if (wasChecked) li.classList.add('checked');
 
-      // Click to toggle checkbox (if applicable)
+      // Click to toggle checkbox
       li.addEventListener('click', (e) => {
         if (e.target.closest('.item-play-btn')) return;
-        if (!isCheckable) return;
         
         const i = parseInt(li.dataset.idx);
         if (checked.has(i)) { 
@@ -504,8 +509,8 @@ async function loadMarkdown(file) {
           let parentList = li.closest('ul, ol');
           if (parentList) {
             let sibling = parentList.nextElementSibling;
-            // Stop if we hit the next question (UL/OL) or a new section header
-            while (sibling && !['UL', 'OL', 'H1', 'H2', 'H3', 'H4'].includes(sibling.tagName)) {
+            // Stop if we hit the next question or a new section header
+            while (sibling && !['H1', 'H2', 'H3', 'H4'].includes(sibling.tagName) && !sibling.classList.contains('question-list')) {
                textToRead += " " + sibling.outerHTML;
                sibling = sibling.nextElementSibling;
             }
